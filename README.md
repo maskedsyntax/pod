@@ -1,2 +1,2 @@
 # QuarkMenu
-Dynamic Menu for x11 window managers
+Minimal dynamic menu for x11 window managers
