@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-# QuarkMenu
-Minimal dynamic menu for x11 window managers
-=======
 <div align="center">
   <!-- <p align="center"> -->
     <img src="./assets/pocket.svg" alt="FuzzyBunny Logo" width="150" />
@@ -40,4 +36,3 @@ Make sure you have all dependencies installed, then simply run:
 ## License
 
 This project is licensed under the [**MIT License**](./LICENSE).
->>>>>>> Stashed changes
