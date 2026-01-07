@@ -1,0 +1,40 @@
+/* Global Window Settings */
+PodWindow {
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+QPushButton {
+    background-color: #000000;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+    color: #FFFFFF; 
+    outline: none; /* Remove default focus outline */
+}
+
+/* First and Last Button Rounding */
+QPushButton#action-btn:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+QPushButton#action-btn:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Hover and Focus State */
+QPushButton:hover,
+QPushButton:focus {
+    background-color: #FFFFFF;
+    color: #000000;
+    outline: none;
+    border: none;
+}
+
+/* Pressed State */
+QPushButton:pressed {
+    background-color: #cccccc;
+}
