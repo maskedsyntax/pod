@@ -120,10 +120,11 @@ private:
 class PodWindow : public QWidget {
 public:
     PodWindow(QWidget *parent = nullptr) : QWidget(parent) {
+        // Window Setup
         setWindowFlags(Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint | Qt::Tool);
-        setAttribute(Qt::WA_TranslucentBackground);
         setWindowTitle("Pod");
 
+        // Layout
         QHBoxLayout *layout = new QHBoxLayout(this);
         layout->setContentsMargins(0, 0, 0, 0);
         layout->setSpacing(0);

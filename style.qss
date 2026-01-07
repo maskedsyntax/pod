@@ -1,11 +1,11 @@
 /* Global Window Settings */
 PodWindow {
-    background-color: rgba(0, 0, 0, 217); /* ~85% Opacity (217/255) */
+    background-color: #000000;
     border-radius: 8px;
 }
 
 QPushButton {
-    background-color: transparent;
+    background-color: #000000;
     border: none;
     margin: 0px;
     padding: 0px;
