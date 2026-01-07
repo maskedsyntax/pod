@@ -1,10 +1,12 @@
+<div align="center">
+
 # Pod
 
 Pod is a modern, ricing-friendly powermenu for i3wm, inspired by `rofi` and built with C++ and Qt6.
 
-<p align="center">
-  <img src="assets/pod.png" alt="Pod Screenshot">
-</p>
+<img src="assets/pod.png" alt="Pod Screenshot">
+
+</div>
 
 ## Features
 - **Minimalist Design**: Undecorated, floating window with rounded corners.
