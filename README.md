@@ -2,18 +2,22 @@
 
 Pod is a modern, ricing-friendly powermenu for i3wm, inspired by `rofi` and built with C++ and Qt6.
 
+<p align="center">
+  <img src="assets/pod.png" alt="Pod Screenshot">
+</p>
+
 ## Features
 - **Minimalist Design**: Undecorated, floating window with rounded corners.
 - **Visual Feedback**: Black theme with white accents, reversing on selection.
-- **Custom Images**: Load your own icons from `~/.config/pod/assets/`.
-- **Keyboard Driven**: Close with Esc.
+- **Custom Icons**: Load your own SVGs from `~/.config/pod/assets/`.
+- **Keyboard Driven**: Full Tab navigation and Enter key support.
 
 ## Requirements
-- `qt6-base-dev` (or equivalent Qt6 Widgets package)
+- `qt6-base-dev`
 - `cmake`
 - `make`
 - `i3lock` (for Lock functionality)
-- `systemd` (for poweroff/reboot/suspend)
+- `systemd` / `logind`
 
 ## Build & Install
 
@@ -28,14 +32,14 @@ sudo cp pod /usr/local/bin/
 ## Configuration
 
 ### Custom Icons/Images
-Pod looks for `.png` images in `~/.config/pod/assets/` or `./assets/` with the following names:
-- `shutdown.png`
-- `reboot.png`
-- `lock.png`
-- `suspend.png`
-- `logout.png`
+Pod looks for `.svg` images in `~/.config/pod/assets/` or `./assets/` with the following names:
+- `poweroff.svg`
+- `reboot.svg`
+- `lock.svg`
+- `sleep.svg`
+- `logout.svg`
 
-If an image is not found, it falls back to the system icon theme.
+If an SVG is not found, it falls back to the system icon theme.
 
 ### Styling
 Customize the look by editing `style.qss`. Place your custom file at `~/.config/pod/style.qss`.
@@ -48,9 +52,7 @@ bindsym Mod4+Shift+e exec --no-startup-id /usr/local/bin/pod
 ```
 
 ## Usage
-- **Shutdown**: Click
-- **Reboot**: Click
-- **Lock**: Click
-- **Suspend**: Click
-- **Logout**: Click
-- **Escape**: Close menu
+- **Tab**: Cycle between options.
+- **Enter**: Execute selected option.
+- **Escape**: Close menu.
+- **Mouse**: Click to execute.
