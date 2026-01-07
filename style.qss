@@ -1,6 +1,6 @@
 /* Global Window Settings */
 PodWindow {
-    background-color: rgba(0, 0, 0, 0.85); /* 85% Opacity */
+    background-color: rgba(0, 0, 0, 217); /* ~85% Opacity (217/255) */
     border-radius: 8px;
 }
 
