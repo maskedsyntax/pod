@@ -131,8 +131,8 @@ public:
         layout->setContentsMargins(0, 0, 0, 0);
         layout->setSpacing(0);
 
-        addButton(layout, "poweroff", "Shutdown", "system-shutdown", "loginctl poweroff");
-        addButton(layout, "reboot",   "Reboot",   "system-reboot",   "loginctl reboot");
+        addButton(layout, "poweroff", "Shutdown", "system-shutdown", "systemctl poweroff");
+        addButton(layout, "reboot",   "Reboot",   "system-reboot",   "systemctl reboot");
         HoverButton* lockBtn = addButton(layout, "lock",     "Lock",     "system-lock-screen", "i3lock -c 000000");
         addButton(layout, "sleep",    "Suspend",  "system-suspend",  "loginctl suspend");
         addButton(layout, "logout",   "Logout",   "system-log-out",  "i3-msg exit");
