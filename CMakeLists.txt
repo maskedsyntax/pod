@@ -19,7 +19,7 @@ install(FILES style.qss DESTINATION share/pod)
 # CPack / Debian Packaging
 set(CPACK_GENERATOR "DEB")
 set(CPACK_PACKAGE_NAME "pod")
-set(CPACK_PACKAGE_VERSION "1.1.0")
+set(CPACK_PACKAGE_VERSION "1.1.1")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "A minimalist, ricing-friendly powermenu for i3wm")
 set(CPACK_PACKAGE_CONTACT "Maintainer <maintainer@example.com>")
 set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Pod Contributors")
