@@ -32,7 +32,9 @@ public:
         searchPaths << QCoreApplication::applicationDirPath() + "/assets/" + iconName + ".svg";
         // 3. User config
         searchPaths << QDir::homePath() + "/.config/pod/assets/" + iconName + ".svg";
-        // 4. System install
+        // 4. Embedded Resources
+        searchPaths << ":/assets/" + iconName + ".svg";
+        // 5. System install
         searchPaths << "/usr/share/pod/assets/" + iconName + ".svg";
 
         QString finalPath;
@@ -172,6 +174,7 @@ private:
 void loadStyle(QApplication &app) {
     QStringList searchPaths;
     searchPaths << QDir::homePath() + "/.config/pod/style.qss";
+    searchPaths << ":/style.qss";
     searchPaths << "style.qss";
     searchPaths << "../style.qss";
     searchPaths << "/usr/share/pod/style.qss";

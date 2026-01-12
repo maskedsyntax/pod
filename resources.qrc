@@ -1,0 +1,12 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>style.qss</file>
+        <file>assets/lock.svg</file>
+        <file>assets/logout.svg</file>
+        <file>assets/pod.png</file>
+        <file>assets/poweroff.svg</file>
+        <file>assets/reboot.svg</file>
+        <file>assets/sleep.svg</file>
+    </qresource>
+</RCC>
